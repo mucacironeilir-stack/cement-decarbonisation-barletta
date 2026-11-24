@@ -1,0 +1,108 @@
+Grandezza,Valore,Unita
+=== PARAMETRI E IPOTESI (Sez.0) ===,,
+Tasso di sconto,6,%
+Orizzonte di valutazione,20,anni
+Prezzo elettricita (autoconsumo),0.20,EUR/kWh
+Prezzo combustibile sostituito,5.0,EUR/GJ
+Prezzo quota EU-ETS,80,EUR/t
+Prezzo export in rete,0.10,EUR/kWh
+Prezzo H2 mercato (rif.),5.0,EUR/kg
+OPEX (frazione del CAPEX),3,%/anno
+CAPEX C0 PV / inverter / ely,800 / 60 / 1500,EUR/kW a 1 MW
+Esponenti di scala m (PV/inv/ely),0.95 / 0.95 / 0.90,-
+Retrofit bruciatore (fisso),3.0,M EUR
+Consumo specifico elettrolizz.,53,kWh/kg H2
+Rapporto DC/AC inverter,1.20,-
+=== BASELINE (Sez.2) ===,,
+Periodo dati,2024-2025,-
+Clinker medio annuo,830000,t/anno
+Cemento medio annuo,1061381,t/anno
+Fabbisogno elettrico,130.5,GWh/anno
+Fabbisogno termico,962.6,GWh_th/anno
+Termico specifico (cottura),907,kWh_th/t cem
+CO2 specifica (calcolata),699,kg/t cem
+CO2 totale impianto,742372,t/anno
+CO2 calcinazione,435750,t/anno
+CO2 combustione,270068,t/anno
+CO2 elettrico,36554,t/anno
+Quota calcinazione,58.7,%
+Quota combustione,36.4,%
+Quota elettrico,4.9,%
+Quota aggredibile (comb+elec),41.3,%
+=== DINAMICA (Sez.3) ===,,
+Capacity factor (giorni),43.2,%
+Capacity factor (ore),43.2,%
+Ore di marcia totali,7584,h
+N. campagne,15,-
+Durata media campagna,21.1,giorni
+Durata max campagna,29,giorni
+Durata media fermata,25.9,giorni
+=== CONFIGURAZIONE H2 (Sez.4-5) ===,,
+Taglia PV,3.95,MWp
+Inverter (AC),3.29,MW_AC
+Elettrolizzatore,1.91,MW
+Producibilita PV,1277,kWh/kWp/anno
+Energia PV netta,5.0,GWh/anno
+H2 in combustione blended,36374,kg/anno
+Sostituzione termica,0.13,%
+Elettricita autoconsumata,3.12,GWh/anno
+PV -> elettrolizzatore,1.93,GWh/anno
+PV -> H2 utile al forno (PCI),1.21,GWh/anno
+Perdita conversione ely,0.72,GWh/anno
+PV -> autoconsumo,3.12,GWh/anno
+CO2 evitata (B),1287,t/anno
+CO2 Scope 1 (B),415,t/anno
+CO2 Scope 2 (B),873,t/anno
+H2 venduto (taglia reale),0,kg/anno
+CO2 esportata con H2 venduto,0,t/anno
+Prezzo H2 mercato (rif.),5.0,EUR/kg
+Prezzo export in rete,0.10,EUR/kWh
+Export in rete (reale),0.00,GWh/anno
+CAPEX (B) totale,8.83,M EUR
+CAPEX - campo PV,2.95,M EUR
+CAPEX - inverter,0.19,M EUR
+CAPEX - elettrolizzatore,2.69,M EUR
+CAPEX - retrofit bruciatore,3.00,M EUR
+OPEX annuo (B),0.26,M EUR/anno
+Ore equivalenti elettrolizzatore,1007,h/anno
+Quota PV utile alla cementeria,100,%
+VAN (B),-3.28,M EUR
+LCOH,12.53,EUR/kg
+LCOH - CAPEX elettrolizzatore,6.45,EUR/kg
+LCOH - elettricita,3.86,EUR/kg
+LCOH - OPEX,2.22,EUR/kg
+LCOE PV,73,EUR/MWh
+CF elettrolizzatore,11,%
+Rif. PV->elettr.: VAN,8.65,M EUR
+Rif. PV->elettr.: CO2,1413,t/anno
+Rif. PV->elettr.: CAPEX,3.14,M EUR
+=== STUDIO PER TAGLIE (Sez.5) ===,,
+Tetto sostituzione (no accumulo),9.7,%
+Taglia reale: PV / superficie,3.9 MWp | 3 ha (1.0x sito),-
+Taglia reale: subst / CO2 / VAN / LCOH / LCOE,0.13% | 1287 t/a | -3.3 M | 12.53 | 73 EUR/MWh,-
+Taglia reale: elettrolizz. / CF / CAPEX / OPEX,1.9 MW | 11% | 8.8 M | 0.26 M/a,-
+Taglia reale: ore equiv. elettrolizz. / PV utile cementeria,1007 h/a | 100%,-
+Taglia reale: H2 forno / H2 venduto / export rete,36 t/a | 0 t/a | 0.00 GWh/a,-
+Taglia reale: LCOH (CAPEX_ely / elettr. / OPEX),6.45 + 3.86 + 2.22 = 12.53 EUR/kg,-
+Taglia reale: prezzo H2 di pareggio (VAN=0),non vende H2 (VAN insensibile al prezzo),-
+Taglia 1%: PV / superficie,31.4 MWp | 24 ha (7.9x sito),-
+Taglia 1%: subst / CO2 / VAN / LCOH / LCOE,1.00% | 8698 t/a | 6.9 M | 8.68 | 66 EUR/MWh,-
+Taglia 1%: elettrolizz. / CF / CAPEX / OPEX,15.2 MW | 16% | 42.8 M | 1.28 M/a,-
+Taglia 1%: ore equiv. elettrolizz. / PV utile cementeria,1365 h/a | 86%,-
+Taglia 1%: H2 forno / H2 venduto / export rete,289 t/a | 103 t/a | 0.00 GWh/a,-
+Taglia 1%: LCOH (CAPEX_ely / elettr. / OPEX),3.87 + 3.48 + 1.33 = 8.68 EUR/kg,-
+Taglia 1%: prezzo H2 di pareggio (VAN=0),2.79 EUR/kg (sotto il LCOH 8.68),-
+Taglia 2%: PV / superficie,62.7 MWp | 47 ha (15.9x sito),-
+Taglia 2%: subst / CO2 / VAN / LCOH / LCOE,2.00% | 13406 t/a | 4.2 M | 6.99 | 63 EUR/MWh,-
+Taglia 2%: elettrolizz. / CF / CAPEX / OPEX,30.4 MW | 21% | 78.8 M | 2.36 M/a,-
+Taglia 2%: ore equiv. elettrolizz. / PV utile cementeria,1827 h/a | 69%,-
+Taglia 2%: H2 forno / H2 venduto / export rete,578 t/a | 470 t/a | 0.21 GWh/a,-
+Taglia 2%: LCOH (CAPEX_ely / elettr. / OPEX),2.70 + 3.36 + 0.93 = 6.99 EUR/kg,-
+Taglia 2%: prezzo H2 di pareggio (VAN=0),6.20 EUR/kg (sotto il LCOH 6.99),-
+Taglia 5%: PV / superficie,160.6 MWp | 121 ha (40.7x sito),-
+Taglia 5%: subst / CO2 / VAN / LCOH / LCOE,5.00% | 25207 t/a | -17.4 M | 6.03 | 61 EUR/MWh,-
+Taglia 5%: elettrolizz. / CF / CAPEX / OPEX,77.8 MW | 24% | 184.5 M | 5.53 M/a,-
+Taglia 5%: ore equiv. elettrolizz. / PV utile cementeria,2138 h/a | 53%,-
+Taglia 5%: H2 forno / H2 venduto / export rete,1444 t/a | 1695 t/a | 7.50 GWh/a,-
+Taglia 5%: LCOH (CAPEX_ely / elettr. / OPEX),2.10 + 3.21 + 0.72 = 6.03 EUR/kg,-
+Taglia 5%: prezzo H2 di pareggio (VAN=0),6.92 EUR/kg (sopra il LCOH 6.03),-
